@@ -42,9 +42,9 @@ export default function Signup() {
 
   return ( 
     <form onSubmit={handleSubmit} className="auth-form">
-      <h2>sign up</h2>
+      <h2>Sign up</h2>
       <label>
-        <span>email:</span>
+        <span>Email:</span>
         <input
           required 
           type="email" 
@@ -53,7 +53,7 @@ export default function Signup() {
         />
       </label>
       <label>
-        <span>password:</span>
+        <span>Password:</span>
         <input
           required
           type="password" 
@@ -62,7 +62,7 @@ export default function Signup() {
         />
       </label>
       <label>
-        <span>display name:</span>
+        <span>Display name:</span>
         <input
           required
           type="text" 
@@ -80,7 +80,7 @@ export default function Signup() {
         {thumbnailError && <div className="error">{thumbnailError}</div>}
       </label>
       {!isPending && <button className="btn">Sign up</button>}
-      {isPending && <button className="btn" disabled>loading</button>}
+      {isPending && <button className="btn" disabled>Loading</button>}
       {error && <div className="error">{error}</div>}
     </form>
   )
